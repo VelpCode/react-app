@@ -4,6 +4,7 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
 import Image from "next/image";
 import deved from '/public/Aman5.png'
+import help from "/public/help1.png"
 import { useState } from "react"
 
   export default function Home() {
@@ -22,13 +23,13 @@ import { useState } from "react"
             <h1 className ="text-4xl font-semibold dark:text-white">Velp</h1>
             <ul className = "flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className = "cursor-pointer text-2xl"/>
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className = "cursor-pointer text-2xl dark:text-white"/>
               </li>
-              <li><a className = "bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8" href="#">Resume</a></li>
+              <li><a className = "bg-gradient-to-r from-red-300 to-red-500 text-white px-4 py-2 border-none rounded-md ml-8" href="#">Resume</a></li>
             </ul>
           </nav>
           <div className = "text-center p-10 dark:text-white">
-            <h2 className ="text-5xl py2 text-teal-600 font-medium">Aman Velp</h2>
+            <h2 className ="text-5xl py2 text-red-400 font-medium">Aman Velp</h2>
             <h3 className = "text-2xl py-2">Frontend Developer and fulltime doodler.</h3>
             <p className = "text-md py-5 leading-8 text-gray-800 dark:text-white">I'm a university student studying Computer Science that has a passion for
               building, learning & fitness. Find out more about me!
@@ -39,10 +40,38 @@ import { useState } from "react"
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
-          <div className = "relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden">
+          <div className = "relative mx-auto bg-gradient-to-b from-red-300 rounded-full w-80 h-80 mt-10 overflow-hidden">
             <Image src={deved} layout ="fill" objectFit = "cover"/>
           </div>
 
+        </section>
+
+        <section>
+        <div>
+          <h3 className = "text-4xl py-1">What I <span className = "text-red-500">offer..</span></h3>
+          <p className = "text-md py-2 leading-8 text-gray-80">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
+            and well maintained. I also offer  <span className = "text-red-400">doodling</span> services where I'll draw you for <span className = "text-red-400">$999</span> dollars.
+          </p>
+          <p className = "text-md py-2 leading-8 text-gray-80"> I offer a wide range of services including brand design, programming, web design & coaching.
+          </p>
+          </div>
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image src={help} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Indesign</p>
+            </div>
+          </div>
         </section>
       </main>
     </div>
