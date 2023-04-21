@@ -8,11 +8,11 @@ import help from "/public/help2.png"
 import velp from "/public/help3.png"
 import workshop from "/public/brandin.png"
 import web1 from "/public/web6.png"
-import web2 from "/public/web1.png"
-import web3 from "/public/web5.png"
+import web2 from "/public/web7.png"
+import web3 from "/public/web1.png"
 import web4 from "/public/web2.png"
 import web5 from "/public/web1.png"
-import web from "/public/web4.png"
+import web6 from "/public/web4.png"
 
 
 import { useState } from "react"
@@ -28,7 +28,7 @@ import { useState } from "react"
         <link rel = "icon" href = "/favicon.ico"></link>
       </Head>
 
-      <main className ="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className ="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className = "p-10 mb-12 flex justify-between">
             <h1 className ="text-4xl font-semibold dark:text-white">Velp</h1>
@@ -40,7 +40,7 @@ import { useState } from "react"
             </ul>
           </nav>
           <div className = "text-center p-10 dark:text-white">
-            <h2 className ="text-5xl py2 text-red-400 font-medium">Aman Velp</h2>
+            <h2 className ="text-5xl py2 text-red-400 font-medium md:text-6xl">Aman Velp</h2>
             <h3 className = "text-2xl py-2">Frontend Developer and fulltime doodler.</h3>
             <p className = "text-md py-5 leading-8 text-gray-800 dark:text-white">I'm a university student studying Computer Science that has a passion for
               building, learning & fitness. Find out more about me!
@@ -115,6 +115,36 @@ import { useState } from "react"
               <p className="text-gray-800 py-1">React/JavaScript</p>
               <p className="text-gray-800 py-1">ChatGpt</p>
               <p className="text-gray-800 py-1">Tailwind</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className = "text-4xl font-semibold py-1">My Portfolio</h3>
+            <p className = "text-md py-2 leading-8 text-gray-80">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
+            and well maintained. I also offer  <span className = "text-red-400">coaching</span> services where I'll <span className = "text-red-400">teach</span> you essential skills needed.
+            </p>
+            <p className = "text-md py-2 leading-8 text-gray-80"> I offer a wide range of services including brand design, programming, web design & coaching.
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image src = {web1}></Image>
+            </div>
+            <div>
+              <Image src = {web2}></Image>
+            </div>
+            <div>
+              <Image src = {web3}></Image>
+            </div>
+            <div>
+              <Image src = {web4}></Image>
+            </div>
+            <div>
+              <Image src = {web5}></Image>
+            </div>
+            <div>
+              <Image src = {web6}></Image>
             </div>
           </div>
         </section>
