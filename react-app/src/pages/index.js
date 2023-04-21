@@ -3,9 +3,20 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
 import Image from "next/image";
-import deved from '/public/Aman5.png'
-import help from "/public/help1.png"
+import deved from '/public/Aman4.png'
+import help from "/public/help2.png"
+import velp from "/public/help3.png"
+import workshop from "/public/brandin.png"
+import web1 from "/public/web6.png"
+import web2 from "/public/web1.png"
+import web3 from "/public/web5.png"
+import web4 from "/public/web2.png"
+import web5 from "/public/web1.png"
+import web from "/public/web4.png"
+
+
 import { useState } from "react"
+
 
   export default function Home() {
     const [darkMode, setDarkMode] = useState(false);
@@ -48,16 +59,18 @@ import { useState } from "react"
 
         <section>
         <div>
-          <h3 className = "text-4xl py-1">What I <span className = "text-red-500">offer..</span></h3>
+          <h3 className = "text-4xl font-semibold py-1">Services I <span className = "text-red-500">provide..</span></h3>
           <p className = "text-md py-2 leading-8 text-gray-80">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
-            and well maintained. I also offer  <span className = "text-red-400">doodling</span> services where I'll draw you for <span className = "text-red-400">$999</span> dollars.
+            and well maintained. I also offer  <span className = "text-red-400">coaching</span> services where I'll <span className = "text-red-400">teach</span> you essential skills needed.
           </p>
           <p className = "text-md py-2 leading-8 text-gray-80"> I offer a wide range of services including brand design, programming, web design & coaching.
           </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={help} width={100} height={100} />
+            <div className="flex justify-center">
+              <Image src={velp} width={150} height={150} />
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Beautiful Designs
               </h3>
@@ -70,6 +83,38 @@ import { useState } from "react"
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Indesign</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="flex justify-center">
+              <Image src={workshop} width={100} height={100} />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Branding Help
+              </h3>
+              <p className="py-2">
+                Helping you kickstart your personal brand using various tools & methodologies for social media growth.
+              </p>
+              <h4 className="py-4 text-teal-600">Branding Tools I Use</h4>
+              <p className="text-gray-800 py-1">Hypefury</p>
+              <p className="text-gray-800 py-1">Twitter</p>
+              <p className="text-gray-800 py-1">Linkedln</p>
+              <p className="text-gray-800 py-1">Doordash</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="flex justify-center">
+              <Image src={help} width={150} height={150} />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Development Coaching
+              </h3>
+              <p className="py-2">
+                Coaching you to become the best Frontend developer in the market. Getting you job ready & project building ready.
+              </p>
+              <h4 className="py-4 text-teal-600">Development Tools I Use</h4>
+              <p className="text-gray-800 py-1">VScode</p>
+              <p className="text-gray-800 py-1">React/JavaScript</p>
+              <p className="text-gray-800 py-1">ChatGpt</p>
+              <p className="text-gray-800 py-1">Tailwind</p>
             </div>
           </div>
         </section>
