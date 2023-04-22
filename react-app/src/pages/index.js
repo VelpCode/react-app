@@ -3,7 +3,7 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
 import Image from "next/image";
-import deved from '/public/Aman4.png'
+import deved from '/public/Aman5.png'
 import help from "/public/help2.png"
 import velp from "/public/help3.png"
 import workshop from "/public/brandin.png"
@@ -11,7 +11,7 @@ import web1 from "/public/web6.png"
 import web2 from "/public/web7.png"
 import web3 from "/public/web1.png"
 import web4 from "/public/web2.png"
-import web5 from "/public/web1.png"
+import web5 from "/public/web3.png"
 import web6 from "/public/web4.png"
 
 
@@ -59,11 +59,11 @@ import { useState } from "react"
 
         <section>
         <div>
-          <h3 className = "text-4xl font-semibold py-1">Services I <span className = "text-red-500">provide..</span></h3>
-          <p className = "text-md py-2 leading-8 text-gray-80">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
+          <h3 className = "text-4xl font-semibold py-1 dark:text-white">Services I <span className = "text-red-500">provide..</span></h3>
+          <p className = "text-md py-2 leading-8 text-gray-80 dark:text-white">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
             and well maintained. I also offer  <span className = "text-red-400">coaching</span> services where I'll <span className = "text-red-400">teach</span> you essential skills needed.
           </p>
-          <p className = "text-md py-2 leading-8 text-gray-80"> I offer a wide range of services including brand design, programming, web design & coaching.
+          <p className = "text-md py-2 leading-8 text-gray-80 dark:text-white"> I offer a wide range of services including brand design, programming, web design & coaching.
           </p>
           </div>
           <div className="lg:flex gap-10">
@@ -120,33 +120,57 @@ import { useState } from "react"
         </section>
         <section>
           <div>
-            <h3 className = "text-4xl font-semibold py-1">My Portfolio</h3>
-            <p className = "text-md py-2 leading-8 text-gray-80">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
+            <h3 className = "text-4xl font-semibold py-1 dark:text-white">My Portfolio</h3>
+            <p className = "text-md py-2 leading-8 text-gray-80 dark:text-white">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
             and well maintained. I also offer  <span className = "text-red-400">coaching</span> services where I'll <span className = "text-red-400">teach</span> you essential skills needed.
             </p>
-            <p className = "text-md py-2 leading-8 text-gray-80"> I offer a wide range of services including brand design, programming, web design & coaching.
+            <p className = "text-md py-2 leading-8 text-gray-80 dark:text-white"> I offer a wide range of services including brand design, programming, web design & coaching.
             </p>
           </div>
-          <div>
-            <div>
-              <Image src = {web1}></Image>
+          <div className = "flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className = "basis-1/3 flex-1">
+            <Image className = "rounded-lg object-cover"
+              width={"100%"}
+              height ={"100%"}
+              layout="reponsve"
+              src = {web1}></Image>
             </div>
-            <div>
-              <Image src = {web2}></Image>
+            <div className = "basis-1/3 flex-1 border-2 border-black-300 shadow-lg rounded-lg">
+              <Image className = "rounded-lg object-cover"
+              width={"100%"}
+              height ={"100%"}
+              layout="reponsve"
+              src = {web2}></Image>
             </div>
-            <div>
-              <Image src = {web3}></Image>
+            <div className = "basis-1/3 flex-1">
+            <Image className = "rounded-lg object-cover"
+              width={"100%"}
+              height ={"100%"}
+              layout="reponsve"
+              src = {web3}></Image>
             </div>
-            <div>
-              <Image src = {web4}></Image>
+            <div className = "basis-1/3 flex-1">
+            <Image className = "rounded-lg object-cover"
+              width={"100%"}
+              height ={"100%"}
+              layout="reponsve"
+              src = {web4}></Image>
             </div>
-            <div>
-              <Image src = {web5}></Image>
+            <div className = "basis-1/3 flex-1">
+            <Image className = "rounded-lg object-cover"
+              width={"100%"}
+              height ={"100%"}
+              layout="reponsve"
+              src = {web5}></Image>
             </div>
-            <div>
-              <Image src = {web6}></Image>
+            <div className = "basis-1/3 flex-1">
+            <Image className = "rounded-lg object-cover"
+              width={"100%"}
+              height ={"100%"}
+              layout="reponsve"
+              src = {web6}></Image>
             </div>
-          </div>
+            </div>
         </section>
       </main>
     </div>
