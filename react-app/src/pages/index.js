@@ -3,7 +3,7 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
 import Image from "next/image";
-import deved from '/public/Aman5.png'
+import deved from '/public/Aman4.png'
 import help from "/public/help2.png"
 import velp from "/public/help3.png"
 import workshop from "/public/brandin.png"
@@ -13,6 +13,8 @@ import web3 from "/public/web1.png"
 import web4 from "/public/web2.png"
 import web5 from "/public/web3.png"
 import web6 from "/public/web4.png"
+import tutor from "/public/tutor.png"
+import tech from "/public/tech.png"
 
 
 import { useState } from "react"
@@ -171,6 +173,50 @@ import { useState } from "react"
               src = {web6}></Image>
             </div>
             </div>
+        </section>
+        <section>
+        <div>
+          <h3 className = "text-4xl font-semibold py-1 dark:text-white"> My work <span className = "text-red-500">experience</span></h3>
+          <p className = "text-md py-2 leading-8 text-gray-80 dark:text-white">Since I start off with web development I've been immersed in creating applications that serve a purpose. Contact me and I will create an amazing website for you that is functional
+            and well maintained. I also offer  <span className = "text-red-400">coaching</span> services where I'll <span className = "text-red-400">teach</span> you essential skills needed.
+          </p>
+          <p className = "text-md py-2 leading-8 text-gray-80 dark:text-white"> I offer a wide range of services including brand design, programming, web design & coaching.
+          </p>
+          </div>
+          <div className="flex flex-col lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="flex justify-center">
+              <Image src={tutor} width={200} height={200} />
+              </div>
+              <h3 className="text-xl font-medium pt-8 pb-2  ">
+                Computer Science Tutoring
+              </h3>
+              <p className="py-2">
+                Helping you kickstart your personal brand using various tools & methodologies for social media growth.
+              </p>
+              <h4 className="py-4 text-teal-600">Branding Tools I Use</h4>
+              <p className="text-gray-800 py-1">Hypefury</p>
+              <p className="text-gray-800 py-1">Twitter</p>
+              <p className="text-gray-800 py-1">Linkedln</p>
+              <p className="text-gray-800 py-1">Doordash</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="flex justify-center">
+              <Image src={tech} width={250} height={250} />
+              </div>
+              <h3 className="text-xl font-medium pt-8 pb-2  ">
+                Online Technical Support
+              </h3>
+              <p className="py-2">
+                Coaching you to become the best Frontend developer in the market. Getting you job ready & project building ready.
+              </p>
+              <h4 className="py-4 text-teal-600">Development Tools I Use</h4>
+              <p className="text-gray-800 py-1">VScode</p>
+              <p className="text-gray-800 py-1">React/JavaScript</p>
+              <p className="text-gray-800 py-1">ChatGpt</p>
+              <p className="text-gray-800 py-1">Tailwind</p>
+            </div>
+          </div>
         </section>
       </main>
     </div>
